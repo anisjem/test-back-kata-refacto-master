@@ -35,7 +35,6 @@ class TemplateManagerTest extends PHPUnit_Framework_TestCase
     public function test()
     {
         $faker = \Faker\Factory::create();
-//        $faker = Factory::create();
 
         $expectedDestination = DestinationRepository::getInstance()->getById($faker->randomNumber());
         $expectedUser = ApplicationContext::getInstance()->getCurrentUser();
